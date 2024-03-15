@@ -1,0 +1,119 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.header-logo {
+    width: 100px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+  
+.header-search {
+    display: flex;
+    width: 800px;
+    /* flex: 1; */
+    /* align-items: center; */
+    border-radius: 24px;
+}
+  
+.header-searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    margin-top: 8px;
+    /* background-color: #cd9042; */
+    background-color: #747264;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.header-searchInput {
+    height: 30px;
+    /* background-color: red; */
+    padding: 10px;
+    border: none;
+    width: 100%;
+    /* bottom: 20px; */
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+.header-option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+  
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+  
+.header-optionLineOne {
+    font-size: 10px;
+    /* color: red; */
+    text-decoration: none;
+}
+  
+.header-optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+  
+.header-optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+  
+.header-basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 530px) {
+   .header-logo {
+    padding-left: 0;    
+    width: 70px;
+   }
+
+    .header-optionLineOne {
+    font-size: 9px;
+    }
+  
+    .header-optionLineTwo {
+    font-size: 11px;
+    } 
+
+    .header-searchInput {
+        height: 8px;
+    }
+    
+    .header-searchIcon {
+    height: 19px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header-optionLineOne {
+        font-size: 9px;
+        }
+      
+    .header-optionLineTwo {
+        font-size: 9px;
+    } 
+}
